@@ -8,7 +8,7 @@ export const buildTags = function (props) {
   if (props.toggle) {
     console.log('[buildTags] condition met - performing mutation!');
     defaults.noindex = true;
-    defaults.nosuchprop = 'this prop will now persist between call to page SSR (until server restarts)';
+    defaults.nosuchprop = 'this prop will now persist between calls to page SSR (until the server restarts)';
   }
   console.log('[buildTags] after conditional mutation:', props, defaults);
   return defaults;

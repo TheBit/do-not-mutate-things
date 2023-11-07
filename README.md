@@ -8,12 +8,12 @@ It is even not using `next-seo` but mimics its code on pure Next.js.
 ## Steps to reproduce
 1. pnpm install
 2. pnpm dev
-3. see server console and page rendered in the browser
+3. see the server console and page rendered in the browser
 4. now change `src/pages/api/toggle.json` to `true` and refresh the page
-5. see everything again - it is still fine, but you will notice corresponding change
-6. now return toggle to `false` and refresh the page
-7. you will now see hydration error saying: `Server: "{"noindex":true,"nofollow":false,"nosuchprop":"this prop will now persist between call to page SSR (until server restarts)"}" Client: "{"noindex":false,"nofollow":false}"`
-8. you can use `suppressHydrationWarning` on `h2` (or uncomment such commented tag) to suppress the warning, 
+5. see everything again - it is still fine, but you will notice a corresponding change
+6. now return the toggle to `false` and refresh the page
+7. you will now see a hydration error saying: `Server: "{"noindex":true,"nofollow":false,"nosuchprop":"this prop will now persist between calls to page SSR (until the server restarts)"}" Client: "{"noindex":false,"nofollow":false}"`
+8. you can use `suppressHydrationWarning` on `h2` (or uncomment similar commented tag) to suppress the warning, 
 but by now you should understand the problem - DO NOT MUTATE THINGS
 
 
