@@ -3,6 +3,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 # What is this about?
 This repo is just to demonstrate mutation bug for https://github.com/garmeeh/next-seo package.
 
+https://github.com/garmeeh/next-seo/issues/1313
+
 It is even not using `next-seo` but mimics its code on pure Next.js.
 
 ## Steps to reproduce
