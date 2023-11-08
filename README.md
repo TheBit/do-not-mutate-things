@@ -16,7 +16,9 @@ It is even not using `next-seo` but mimics its code on pure Next.js.
 6. now return the toggle to `false` and refresh the page
 7. you will now see a hydration error saying: `Server: "{"noindex":true,"nofollow":false,"nosuchprop":"this prop will now persist between calls to page SSR (until the server restarts)"}" Client: "{"noindex":false,"nofollow":false}"`
 8. you can use `suppressHydrationWarning` on `h2` (or uncomment similar commented tag) to suppress the warning, 
-but by now you should understand the problem - DO NOT MUTATE THINGS
+but by now you should probably understand the problem - there should not be any hydration warnings and the server 
+should have returned object with `noindex: false` as well as without `nosuchprop`)
+9. DO NOT MUTATE THINGS
 
 
 # Below goes regular Next.js README stuff:
